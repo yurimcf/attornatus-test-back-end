@@ -22,8 +22,6 @@ public class PessoaRestController {
         return this.service.addPessoa(pessoa);
     }
 
-
-    //feito
     @PutMapping(
             value = "/{id}",
             consumes = {MediaType.APPLICATION_JSON_VALUE},
@@ -35,8 +33,6 @@ public class PessoaRestController {
         return this.service.updatePessoa(pessoa);
     }
 
-
-    //feito
     @GetMapping(
             produces = {MediaType.APPLICATION_JSON_VALUE}
     )
@@ -44,8 +40,6 @@ public class PessoaRestController {
         return this.service.listPessoas();
     }
 
-
-    //feito
     @GetMapping(
             value = "/{id}",
             produces = {MediaType.APPLICATION_JSON_VALUE}
@@ -54,8 +48,6 @@ public class PessoaRestController {
         return this.service.findById(id).get();
     }
 
-
-    //feito
     @DeleteMapping(
             value = "/{id}",
             produces = {MediaType.APPLICATION_JSON_VALUE}
